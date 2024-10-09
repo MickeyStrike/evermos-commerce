@@ -24,7 +24,8 @@ export const useMinimizedState = <T extends object>(
         if (isJsonString(decrypLs)) return JSON.parse(decrypLs);
         else return initialState;
       } else return initialState;
-    } catch (err) {
+      /* eslint-disable  @typescript-eslint/no-unused-vars */
+    } catch (_err) {
       return initialState;
     }
   };
@@ -50,17 +51,20 @@ export const isJsonString = (jsonString: string) => {
     JSON.parse(jsonString);
 
     return true;
-  } catch (err) {
+    /* eslint-disable  @typescript-eslint/no-unused-vars */
+  } catch (_err) {
     return false;
   }
 };
 
+/* eslint-disable  @typescript-eslint/no-explicit-any */
 export const debounce = <T extends (...args: any) => any>(
   func: T,
   wait?: number,
 ) => {
   let timeout: NodeJS.Timeout | number | undefined;
-
+  
+  /* eslint-disable  @typescript-eslint/no-explicit-any */
   return (...args: any) => {
     const later = () => {
       timeout = undefined;

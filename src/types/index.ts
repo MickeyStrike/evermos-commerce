@@ -55,16 +55,7 @@ export interface IResponseCategory {
   url: string;
 }
 
-// export interface ResponseAPIAxios<T, U = any> {
-//   statusCode: number;
-//   message: string;
-//   data: T;
-//   meta?: U;
-// }
-
-export interface ResponseAPIAxios<T, U = any> {
-  // statusCode: number;
-  // message: string;
+export interface ResponseAPIAxios<T> {
   products: T;
   skip: number;
   total: number

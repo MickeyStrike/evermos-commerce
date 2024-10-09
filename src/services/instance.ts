@@ -2,7 +2,7 @@ import axios, { AxiosError } from "axios";
 import { ResponseAPIAxios } from "@/types";
 import CONSTANT from '@/constant'
 
-const useFrontendInstance = (prefix?: string, token?: string) => {
+const useFrontendInstance = (prefix?: string) => {
   const instance = axios.create({
     baseURL: CONSTANT.BACKEND_URL + (prefix ?? ""),
   });

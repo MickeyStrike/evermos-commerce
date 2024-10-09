@@ -4,7 +4,7 @@ import Card from "@/components/card";
 import Category from "@/components/category";
 import { useDebounce, useMinimizedState } from "@/helper";
 import useFrontendServices from "@/services/frontend-services";
-import { IParamsGetAllProduct, IResponseCategory, IResponseProduct } from "@/types";
+import { IResponseCategory, IResponseProduct } from "@/types";
 import Slider from "../slider";
 
 const images = [
