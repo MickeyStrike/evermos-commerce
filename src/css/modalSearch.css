@@ -1,0 +1,80 @@
+.modal-search-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(31, 41, 55, 0.586);
+  backdrop-filter: blur(4px);
+  z-index: 50;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 80px;
+}
+
+.modal-search-container {
+  /* background-color: #374151; */
+  background-color: white;
+  color: black;
+  border-radius: 8px;
+  padding: 16px;
+  max-width: 640px;
+  width: 100%;
+}
+
+.modal-search-input-container {
+  position: relative;
+}
+
+.modal-search-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #9ca3af;
+}
+
+.modal-search-input {
+  width: 100%;
+  padding: 8px 16px 8px 40px;
+  border: 1px solid #6b7280;
+  border-radius: 8px;
+  background-color: white;
+  color: black;
+}
+
+.modal-search-input:focus {
+  outline: none;
+}
+
+.modal-search-result-list {
+  margin-top: 16px;
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.modal-search-placeholder, .modal-search-loading, .modal-search-error {
+  padding: 16px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+.modal-search-item {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.modal-search-item:hover {
+  background-color: #F0F3F7;
+}
+
+.modal-search-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-right: 16px;
+}
