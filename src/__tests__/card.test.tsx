@@ -3,7 +3,6 @@ import Card from '@/components/card';
 import { IResponseProduct } from '@/types';
 import '@testing-library/jest-dom';
 import React from 'react';
-import Link from 'next/link';
 
 // Mock Next.js `Image` component
 jest.mock('next/image', () => ({
