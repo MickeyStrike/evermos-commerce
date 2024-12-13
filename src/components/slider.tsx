@@ -25,7 +25,7 @@ const Slider:FC<ISliderProps> = ({
   };
 
   return (
-    <div className="slider-wrapper">
+    <div className="slider-wrapper" role='slider'>
       <button className="arrow left" onClick={handleScrollLeft}>
         &lt;
       </button>

@@ -30,8 +30,8 @@ export interface Dimensions {
 }
 
 export interface Meta {
-  createdAt: Date;
-  updatedAt: Date;
+  createdAt: Date | string;
+  updatedAt: Date | string;
   barcode:   string;
   qrCode:    string;
 }
